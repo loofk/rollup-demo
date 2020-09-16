@@ -1,0 +1,36 @@
+{
+  "name": "rollup-demo",
+  "version": "1.0.0",
+  "description": "study rollup settings",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -c -w --environment ENV:development,FORMAT:umd",
+    "dev:esm": "rollup -c -w --environment ENV:development,FORMAT:esm",
+    "dev:iife": "rollup -c -w --environment ENV:development,FORMAT:iife",
+    "dev:cjs": "rollup -c -w --environment ENV:development,FORMAT:cjs",
+    "build": "rollup -c --environment ENV:production,FORMAT:umd",
+    "build:esm": "rollup -c --environment ENV:production,FORMAT:esm",
+    "build:iife": "rollup -c --environment ENV:production,FORMAT:iife",
+    "build:cjs": "rollup -c --environment ENV:production,FORMAT:cjs"
+  },
+  "keywords": [
+    "rollup"
+  ],
+  "author": "Xiang Liu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "lodash": "^4.17.20",
+    "rollup": "^2.26.11",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.0.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  }
+}
